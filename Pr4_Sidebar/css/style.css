@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background: url('../img/bg.jpeg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.open-sidebar{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 30px;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.open-sidebar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sidebar{
+    max-width: 350px;
+    min-height: 100vh;
+    background-color: rgba(12, 145, 193, 0.1);
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.3);
+    transform: translateX(-355px);
+    transition: 0.5s ease-in-out;
+}
+
+.logo{
+    color: whitesmoke;
+    padding: 15px 10px;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.logo h2{
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.close-sidebar{
+    position: absolute;
+    font-size: 25px;
+    top: 17px;
+    right: 25px;
+    transition: transform 0.2s ease-in;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.close-sidebar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-list{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.nav-list:first-child{
+    padding-top: 30px;
+}
+
+.nav-list:hover{
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.2);
+    border-left: 2px solid white;
+    transform: translateX(5px);
+}
+
+.nav-list i{
+    color: whitesmoke;
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.social-icons{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+.social-link i{
+    padding: 7px;
+    font-size: 20px;
+    color: gray;
+}
+
+.social-link i:hover{
+    color: white;
+}
